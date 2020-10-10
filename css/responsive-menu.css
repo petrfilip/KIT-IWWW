@@ -1,0 +1,46 @@
+/* based on: https://code-boxx.com/simple-responsive-pure-css-hamburger-menu/ */
+
+/* [PRO VELKÉ OBRAZOVKY] */
+
+#menu label, #menu input {
+  display: none;
+}
+
+nav {
+  display: flex;
+}
+
+
+/* [PRO MALÉ OBRAZOVKY] */
+@media screen and (max-width: 768px) {
+
+  /* Show Hamburger Icon */
+  #menu label {
+    position: absolute;
+    right: 20px;
+    display: inline-block;
+    color: white;
+    background-color: red;
+    font-style: normal;
+    font-size: 2em;
+    padding: 10px;
+  }
+
+  /* Break down menu items into vertical */
+  nav a {
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+    border-top: 1px solid #333;
+  }
+
+  /* Toggle Show/Hide Menu */
+  nav {
+    display: none;
+  }
+
+  #menu input:checked ~ nav {
+    display: block;
+    margin-right: 100px;
+  }
+}

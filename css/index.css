@@ -41,7 +41,7 @@ a {
 
 #hero {
   text-align: center;
-  background-image: url("img/filipiny.jpg");
+  background-image: url("../img/filipiny.jpg");
   height: 500px;
   background-position: center;
   background-repeat: no-repeat;

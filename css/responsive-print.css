@@ -1,0 +1,15 @@
+/* [PRO TISK] */
+@media print {
+  .pageHeading {
+    all: initial;
+  }
+
+  #menu {
+    display: none;
+  }
+
+  footer {
+    display: none;
+  }
+
+}
