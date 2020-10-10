@@ -2,10 +2,9 @@ input, select, textarea {
   width: 100%;
   padding: 10px;
   box-sizing: content-box;
-  border: 1px solid black;
 }
 
-label {
+form label {
   width: 200px;
   display: block;
 }

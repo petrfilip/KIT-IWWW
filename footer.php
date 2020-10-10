@@ -1,64 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Title</title>
-  <link rel="stylesheet" href="css/index.css">
-  <link rel="stylesheet" href="css/logo.css">
-  <link rel="stylesheet" href="css/experiments.css">
-
-</head>
-<body>
-
-<div id="menu">
-  <div id="logo"></div>
-
-  <nav>
-    <a href="index.html">Úvod</a>
-    <a href="experiments.html">Články</a>
-    <a href="form.html">Kontakt</a>
-  </nav>
-</div>
-
-
-<section class="centeredContentWrapper" style="width: 400px">
-
-  <table style="width:100%">
-    <tr>
-      <th>Firstname</th>
-      <th>Lastname</th>
-      <th>Age</th>
-    </tr>
-    <tr>
-      <td>Jill</td>
-      <td>Smith</td>
-      <td>50</td>
-    </tr>
-    <tr>
-      <td>Eve</td>
-      <td>Jackson</td>
-      <td>94</td>
-    </tr>
-    <tr>
-      <td>Eve</td>
-      <td>Jackson</td>
-      <td>94</td>
-    </tr>
-    <tr>
-      <td>Eve</td>
-      <td>Jackson</td>
-      <td>94</td>
-    </tr>
-    <tr>
-      <td>Eve</td>
-      <td>Jackson</td>
-      <td>94</td>
-    </tr>
-  </table>
-
-</section>
-
-
 <footer>
   <div>
     <span class="footerHeading">Nejčtenější články</span>
@@ -86,7 +25,6 @@
     </ul>
   </div>
 
-
   <div>
     <span class="footerHeading">Zdroje</span>
     <ul>
@@ -98,9 +36,4 @@
       <li><a href="http://junior.guru/">Junior Guru</a></li>
     </ul>
   </div>
-
-
 </footer>
-
-</body>
-</html>
