@@ -1,0 +1,17 @@
+input, select, textarea {
+  width: 100%;
+  padding: 10px;
+  box-sizing: content-box;
+  border: 1px solid black;
+}
+
+label {
+  width: 200px;
+  display: block;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px;
+}
