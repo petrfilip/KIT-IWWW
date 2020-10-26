@@ -1,36 +1,19 @@
 <section class="centeredContentWrapper" style="width: 400px">
 
-  <table style="width:100%">
-    <tr>
-      <th>Firstname</th>
-      <th>Lastname</th>
-      <th>Age</th>
-    </tr>
-    <tr>
-      <td>Jill</td>
-      <td>Smith</td>
-      <td>50</td>
-    </tr>
-    <tr>
-      <td>Eve</td>
-      <td>Jackson</td>
-      <td>94</td>
-    </tr>
-    <tr>
-      <td>Eve</td>
-      <td>Jackson</td>
-      <td>94</td>
-    </tr>
-    <tr>
-      <td>Eve</td>
-      <td>Jackson</td>
-      <td>94</td>
-    </tr>
-    <tr>
-      <td>Eve</td>
-      <td>Jackson</td>
-      <td>94</td>
-    </tr>
-  </table>
+
+    <?php
+
+    $controller = new BlogPostController();
+    if ($_GET["action"] == "addForm") {
+        $controller->addForm();
+    } else if ($_GET["action"] == "addProcess") {
+        $controller->addProcess();
+    } else if ($_GET["action"] == "detail" && !empty($_GET["id"])) {
+        $controller->detail($_GET["id"]);
+    }  else {
+        $controller->listAllInTable();
+    }
+    ?>
+
 
 </section>

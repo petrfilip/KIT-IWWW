@@ -98,3 +98,7 @@ footer a {
 .blogPostPreview {
   transition: 1s;
 }
+
+#content a {
+  color: #a02620;
+}

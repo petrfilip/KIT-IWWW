@@ -1,5 +1,9 @@
 <?php
+function __autoload($class) {
+    require_once  './classes/' . $class .'.php';
+}
 session_start();
+ob_start();
 if ($_POST["password"] == "heslo") {
     $_SESSION["isLogged"] = true;
     $_SESSION["loggedUser"] = "your@email.com";
@@ -32,8 +36,11 @@ if ($_GET["page"] == "logout") {
 // vykreslení menu
 include "menu.php";
 ?>
-
+<div id="content">
 <?php
+
+FlashMessages::displayAllMessages();
+
 # vykreslení obsahu
 $pathToFile = "./page/" . $_GET["page"] . ".php";
 if (file_exists($pathToFile)) {
@@ -42,10 +49,10 @@ if (file_exists($pathToFile)) {
     include "./page/main.php";
 }
 ?>
-
+</div>
 <?php
 /*
- * vykreslení patičkc
+ * vykreslení patičky
  */
 include "footer.php";
 ?>

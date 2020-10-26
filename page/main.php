@@ -9,19 +9,17 @@
   </div>
 
   <div id="blogPostList" class="centeredContentWrapper">
-    <article class="blogPostPreview">
-      <img src="../img/karlovy-vary.jpg" alt="Pohled na Karlovy Vary">
-      <h3>Karlovy Vary</h3>
-    </article>
+    <?php
 
-    <article class="blogPostPreview">
-      <img src="../img/moskva.jpg" alt="Obrázek Izmailova Kremlinu">
-      <h3>Izmailovo Kremlin</h3>
-    </article>
-    <article class="blogPostPreview">
-      <img src="../img/filipiny.jpg" alt="Kayangan Lake">
-      <h3>Kayangan Lake</h3>
-    </article>
+    foreach (BlogPostRepository::getAll() as $item) {
+        echo '<article class="blogPostPreview">
+      <img src="'.$item["image"].'" alt="'.$item["heading"].'">
+      <h3><a href="/index.php?page=experiments&action=detail&id='.$item["id"].'">'.$item["heading"].'</a></h3>
+    </article>';
+    }
+
+
+    ?>
   </div>
 
 </section>

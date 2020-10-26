@@ -2,26 +2,22 @@
   <div>
     <span class="footerHeading">Nejčtenější články</span>
     <ul>
-      <li><a href="#">Výlet do karlových varů</a></li>
-      <li><a href="#">Návštěva Moskvy</a></li>
-      <li><a href="#">Výlet na Filipíny</a></li>
-      <li><a href="#">Vánoční trhy v Linzu</a></li>
-      <li><a href="#">Listopadové pouštění draka</a></li>
-      <li><a href="#">Do práce na kole</a></li>
-      <li><a href="#">Návštěva muzea kosmonautiky</a></li>
+      <?php
+      foreach (BlogPostRepository::getAllByReadCounter() as $item) {
+          echo ' <li><a href="#">'.$item["heading"].'</a></li>';
+      }
+      ?>
     </ul>
   </div>
 
   <div>
     <span class="footerHeading">Nejnovější články</span>
     <ul>
-      <li><a href="#">Vánoční trhy v Linzu</a></li>
-      <li><a href="#">Výlet do karlových varů</a></li>
-      <li><a href="#">Návštěva muzea kosmonautiky</a></li>
-      <li><a href="#">Výlet na Filipíny</a></li>
-      <li><a href="#">Do práce na kole</a></li>
-      <li><a href="#">Listopadové pouštění draka</a></li>
-      <li><a href="#">Návštěva Moskvy</a></li>
+        <?php
+        foreach (BlogPostRepository::getAllSortByIdDesc(5) as $item) {
+            echo ' <li><a href="#">'.$item["heading"].'</a></li>';
+        }
+        ?>
     </ul>
   </div>
 
