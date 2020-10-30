@@ -1,7 +1,0 @@
-
-/* [ON SMALL SCREENS] */
-@media print {
-  #menu, #hero, footer {
-    display: none;
-  }
-}
