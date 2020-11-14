@@ -1,5 +1,6 @@
 <?php
 session_start();
+ob_start();
 
 $banana = array(
     "id" => 1,
@@ -15,8 +16,8 @@ $apple = array(
 );
 $pepper = array(
     "id" => 3,
-    "img" => "&#127798",
-    "name" => "pepper",
+    "img" => "&#127817",
+    "name" => "watermelon",
     "price" => "59",
 );
 $potato = array(
