@@ -1,13 +1,11 @@
-# KIT-IWWW - Responsive
+# KIT-IWWW - PHP
 
-V této ukázce kódů naleznete základy pro vytvoření responsivného designu. 
-Konkrétně úprava základních prvků pro zobrazení na menších zařízeních
-- navigace (hamburger menu)
-- přeuspořádání elementů stránky ( z horizontální zobrazní na vertikální)
+Zdrojové kódy ukazují využití PHP pro tvorbu webu.
+Jedná se o úplné základy jako například:
+- include - pro znovupožitelnost komponent
+- dynamické načítání obsahu
+- připojení do MySQL databáze
+- zpracování formuláře 
+- základní přihlašení do aplikace
 
-
-V rámci vylepšení resposivity webu lze dále udělat například
-[responsivní zobrazení obrázků](https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images) (různé velikosti obrázků pro různá zařízení/rozlišení).
-
-
-![Výstup](output.png)
+Popis celé implementace naleznete na [youtube](https://youtu.be/lIDWq_myICs).
