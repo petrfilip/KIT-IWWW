@@ -27,7 +27,19 @@ V blízké budoucnosti budou (snad) dodělány tutoriály:
 
 - [ ] Nejčastější útoky na web
 - [ ] Základy JavaScriptu
-- [ ] Úvod do NoSQL databází
 - [ ] Adventní kalendář v JavaScriptu
 - [ ] Úvod do Reactu
+- [ ] REST API v PHP
+- [ ] Jak nahrát na hosting (výběr hostingu, FTP, výběr domény)
+
+
+V daleké budoucnosti:
+- [ ] Pokročilejší práce s MySQL databází (pokročilejší dotazy, exekuční plány, indexování, transakce, filldb.info)
+- [ ] Úvod do NoSQL databází
+- [ ] Přehled PHP frameworků
+- [ ] Jak na obrázky (PNG, JPG, WebP, AVIF), lazy loading, base64
+- [ ] Ještě lepší web a jeho vývoj (slug, mod_rewrite, composer)
+- [ ] Analýza webu (Google Analytics, Google Tag Manager)
+- [ ] Platby na eshopech (QR platby, napojení na platební bránu)
+
 
