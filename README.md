@@ -22,10 +22,13 @@ díky kterým se naučíte základům tvorby webových stránek.
    & [zdrojáky](https://github.com/petrfilip/KIT-IWWW/tree/5-eshop))
 5. Jemný úvod do práce s MySQL databází 
    ([video](https://youtu.be/0HjxUCG4o1Y))
+6. Nejběžnější zranitelnosti webových aplikací
+   ([video](https://youtu.be/6izW4Dys8xw)
+   & [zdrojáky](https://github.com/petrfilip/KIT-IWWW/tree/6-vulnerabilities))
    
 V blízké budoucnosti budou (snad) dodělány tutoriály:
 
-- [ ] Nejčastější útoky na web
+- [x] Nejčastější útoky na web
 - [ ] Základy JavaScriptu
 - [ ] Adventní kalendář v JavaScriptu
 - [ ] Úvod do Reactu
