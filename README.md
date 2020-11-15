@@ -1,5 +1,7 @@
 # KIT-IWWW - zranitelnost webů
 
+Principy nejběžnějších útoků naleznete na [youtube](https://youtu.be/6izW4Dys8xw).
+
 Bezpečnost 
 
 - validace vstupů od uživatele
