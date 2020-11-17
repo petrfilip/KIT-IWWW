@@ -1,0 +1,53 @@
+<h1>Validace formuláře</h1>
+
+
+<h3>Validace na klik</h3>
+<input id="vstup">
+<p>Validace: <span id="validation-message-on-submit"></span></p>
+<button onclick="validationFunction('vstup','validation-message-on-submit')">Submit</button>
+
+<hr>
+<h3>Validace během psaní</h3>
+<input id="vstup-on-type" onkeyup="validationFunction('vstup-on-type', 'validation-message-on-type')">
+<p>Validace: <span id="validation-message-on-type"></span></p>
+
+<hr>
+<h3>Zrcadlení vstupu I.</h3>
+<input id="test-on-type" onkeyup="copyValueFromInput('test-on-type', 'test-on-type-output')">
+<p>Výstup: <span id="test-on-type-output"></span></p>
+
+<hr>
+<h3>Zrcadlení vstupu II.</h3>
+<input id="copyLengthValueFromInput" onkeyup="copyLengthValueFromInput('copyLengthValueFromInput', 'copyLengthValueFromInputOutput')">
+<p>Výstup: <span id="copyLengthValueFromInputOutput"></span></p>
+
+
+
+
+<script>
+  function validationFunction(inputId, validationMessageTarget) {
+    let x, text;
+
+    x = document.getElementById(inputId).value;
+    console.log(x)
+
+    if (isNaN(x) || x < 1 || x > 10) {
+      text = "Nevalidní";
+    } else {
+      text = "Validní";
+    }
+    document.getElementById(validationMessageTarget).innerHTML = text;
+  }
+
+  function copyValueFromInput(inputId, targetElement) {
+    document.getElementById(targetElement).innerHTML = document.getElementById(inputId).value.toUpperCase();
+  }
+
+  function copyLengthValueFromInput(inputId, targetElement) {
+    document.getElementById(targetElement).innerHTML = document.getElementById(inputId).value.length;
+  }
+
+
+</script>
+
+<!--https://www.w3schools.com/js/tryit.asp?filename=tryjs_validation_number-->

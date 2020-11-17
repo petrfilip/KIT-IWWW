@@ -1,0 +1,58 @@
+<style>
+  input, button {
+    display: block;
+    margin-top: 10px;
+    width: 400px;
+    box-sizing: border-box;
+  }
+
+  .error {
+    border: 1px solid crimson;
+    background-color: #fc94a8;
+  }
+  .valid {
+    border: 1px solid yellowgreen;
+    background-color: #daffa2;
+  }
+
+</style>
+
+<h1>Event listener</h1>
+
+<button type="button" id="btn">Klikni!</button>
+
+<hr>
+<h3>Validace se změnou atributu</h3>
+<input class="validate">
+<input class="validate">
+<input class="validate">
+<input class="validate">
+
+
+
+<script>
+
+  const inputFieldToValidate = document.getElementsByClassName("validate")
+  for (const input of inputFieldToValidate) {
+    console.log(input)
+    input.addEventListener("keyup", function (e) {
+      const value = e.target.value;
+      console.log(e.target.value);
+
+      if (value.length < 5) {
+        e.target.classList.add("error")
+        e.target.classList.remove("valid")
+      } else {
+        e.target.classList.remove("error")
+        e.target.classList.add("valid")
+      }
+
+    });
+  }
+
+  function myFunction() {
+    alert('POZOR POZOR, VYHRÁL JSI IPHONE 17 XS')
+  }
+
+  document.getElementById("btn").addEventListener("click", myFunction);
+</script>

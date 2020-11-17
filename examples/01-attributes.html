@@ -1,0 +1,25 @@
+<style>
+  #demo-wrapper {
+    border: 2px solid crimson;
+    padding: 10px;
+    margin-top: 10px;
+  }
+
+</style>
+
+<h1>Změna atributů</h1>
+
+<div id="demo-wrapper">
+  <p id="demo1">Tady se to bude měnit.</p>
+  <p id="demo2">Hello JavaScript!</p>
+</div>
+
+<h3>Show-Hide ukázka</h3>
+<button onclick="document.getElementById('demo1').style.display='none'">Skryj!</button>
+<button onclick="document.getElementById('demo1').style.display='block'">Ukaž!</button>
+
+<hr>
+<h3>Změna textu</h3>
+<button onclick="document.getElementById('demo1').innerHTML='Nový text'">První změna</button>
+<button onclick="document.getElementById('demo1').innerHTML=new Date()">Zobraz datum</button>
+<button onclick="document.getElementById('demo1').innerHTML='Tady se to bude měnit.'">Reset</button>

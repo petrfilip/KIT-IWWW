@@ -1,48 +1,21 @@
-# KIT-IWWW
+# KIT-IWWW - Základy JavaScriptu
 
-V tomto repozitáři jsou kompletní zdrojové kódy k tutoriálům, 
-díky kterým se naučíte základům tvorby webových stránek.
+Připravené materiály demonstrují použití JavaScriptu pro tvorbu webu, 
+díky čemuž můžete zlepšit uživatelský prožitek z použití webové stránky.
 
+JavaScript vám umožní například:
+- [měnit atributy a styly elementů](./examples/01-attributes.html)
+- [zobrazit vyskakovací okna](./examples/02-alert.html)
+- [validovat formuláře](./examples/03-form.html)
+- [vytvářet HTML elementy až na klientu](./examples/05-create-element.html)
+- [klonovat celé uzly](./examples/06-clone-element.html)
+- [snímat pohyb myši](./examples/08-mouse.html)
 
+Okomentované příklady najdete na [youtube](https://youtu.be/41aOHGBXAHk).
 
-1. Jak vytvořit webovou stránku v HTML a CSS
-   ([video](https://youtu.be/SGjcjtoxTOE) 
-   & [zdrojáky](https://github.com/petrfilip/KIT-IWWW/tree/1-www-html-css))
-2. Tvoříme responzivní design pomocí CSS 
-   ([video](https://youtu.be/hnztF6PC6F4) 
-   & [zdrojáky](https://github.com/petrfilip/KIT-IWWW/tree/2-www-html-css-responsive))
-3. Jak vytvořit dynamické webové stránky pomocí PHP 
-   ([video](https://youtu.be/lIDWq_myICs) 
-   & [zdrojáky](https://github.com/petrfilip/KIT-IWWW/tree/3-basic-php))
-4. Použití tříd a objeků v PHP 
-   ([video](https://youtu.be/vKUn46sIzJo) 
-   & [zdrojáky](https://github.com/petrfilip/KIT-IWWW/tree/4-php-classes))
-4. Jak vytvořit eshop v PHP 
-   ([video](https://youtu.be/fUf1bWi36VI) 
-   & [zdrojáky](https://github.com/petrfilip/KIT-IWWW/tree/5-eshop))
-5. Jemný úvod do práce s MySQL databází 
-   ([video](https://youtu.be/0HjxUCG4o1Y))
-6. Nejběžnější zranitelnosti webových aplikací
-   ([video](https://youtu.be/6izW4Dys8xw)
-   & [zdrojáky](https://github.com/petrfilip/KIT-IWWW/tree/6-vulnerabilities))
-   
-V blízké budoucnosti budou (snad) dodělány tutoriály:
-
-- [x] Nejčastější útoky na web
-- [ ] Základy JavaScriptu
-- [ ] Adventní kalendář v JavaScriptu
-- [ ] Úvod do Reactu
-- [ ] REST API v PHP
-- [ ] Jak nahrát na hosting (výběr hostingu, FTP, výběr domény)
+Pro vyzkoušení příkladů si repozitář si naklonujte do rootu webového serveru a budete se moci překlikávat mezi ukázkami. 
+Ukázky lze i samostatně spouštět otevřením ve webovém prohlížeci (bez webového serveru).
 
 
-V daleké budoucnosti:
-- [ ] Pokročilejší práce s MySQL databází (pokročilejší dotazy, exekuční plány, indexování, transakce, filldb.info)
-- [ ] Úvod do NoSQL databází
-- [ ] Přehled PHP frameworků
-- [ ] Jak na obrázky (PNG, JPG, WebP, AVIF), lazy loading, base64
-- [ ] Ještě lepší web a jeho vývoj (slug, mod_rewrite, composer)
-- [ ] Analýza webu (Google Analytics, Google Tag Manager)
-- [ ] Platby na eshopech (QR platby, napojení na platební bránu)
-
+![Výstup](output.png)
 
