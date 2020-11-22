@@ -1,0 +1,85 @@
+<style>
+  #list-element {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .user {
+    border: 2px solid crimson;
+    padding: 10px;
+    margin: 10px;
+    width: 350px;
+  }
+</style>
+
+<h1>Insert form</h1>
+<input type="text" id="user-name" placeholder="Name" autocomplete="off">
+<input type="text" id="user-email" placeholder="Email" autocomplete="off">
+<button onclick="submitUser()">Založit uživatele</button>
+
+<div id="list-element"></div>
+
+
+<script>
+
+  function submitUser() {
+    //todo validace dat před odesláním
+    const user = {}
+    user.name = document.getElementById("user-name").value;
+    user.email = document.getElementById("user-email").value;
+
+    console.log(user);
+
+    fetch('./api/06-insert-form.php', {
+      method: 'POST', // *GET, POST, PUT, DELETE, etc.
+      headers: {
+        'Content-Type': 'application/json'
+        // 'Content-Type': 'application/x-www-form-urlencoded', //používá běžný formulář
+      },
+      body: JSON.stringify(user)
+    })
+    .then(response => console.log(response.text()))
+    .then(()=> document.getElementById("user-name").value = '')
+    .then(()=> document.getElementById("user-email").value = '')
+    .then(()=> reloadResource())
+
+  }
+
+  var currentOffset = 0;
+
+
+  function reloadResource() {
+      fetch('./api/06-paging-json.php?limit=4&offset=0')
+      .then(response => response.json())
+      .then(data => convertToHtml(data))
+      .then(html => {
+        document.getElementById("list-element").innerHTML = '';
+        return html
+      })
+      .then(html => html.forEach(item => document.getElementById("list-element").appendChild(item)))
+  }
+
+  function loadResource() {
+    fetch('./api/06-paging-json.php?limit=4&offset=' + currentOffset)
+    .then(response => response.json())
+    .then(data => convertToHtml(data))
+    .then(html => html.forEach(item => document.getElementById("list-element").appendChild(item)))
+    .then(currentOffset++);
+  }
+
+  function convertToHtml(objects) {
+    let converted = [];
+    for (const user of objects) {
+      const div = document.createElement('DIV');
+      const template = `<div class="user"><h3>${user.name}</h3><span>${user.email}</span></div>`; //template literal
+      div.innerHTML = template
+      converted.push(div.firstChild);
+    }
+    console.log(converted);
+    return converted;
+  }
+
+  loadResource();
+
+
+</script>

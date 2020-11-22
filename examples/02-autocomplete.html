@@ -1,0 +1,27 @@
+<style>
+  #target-element {
+    border: 2px solid crimson;
+    padding: 10px;
+    margin-top: 10px;
+    width: 400px;
+  }
+</style>
+
+<h1>Auto-Complete</h1>
+
+<input onkeyup="loadResource(this.value)">
+
+
+<section id="target-element"></section>
+
+
+<script>
+  function loadResource(query) {
+    console.log(query);
+
+    fetch('./api/02-autocomplete.php?query=' + query)
+    .then(response => response.text())
+    .then(data => document.getElementById("target-element").innerHTML = data);
+
+  }
+</script>

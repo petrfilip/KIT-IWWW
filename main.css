@@ -10,7 +10,8 @@ body {
   background: var(--white);
   display: flex;
   width: 100vw;
-  height: 100vh;
+  min-height: 100vh;
+  height: 100%;
   font-size: 23px;
 }
 
@@ -39,6 +40,11 @@ button, input {
   padding: 10px;
   font-size: 23px;
   width: 200px;
+  margin: 5px;
+}
+
+input:read-only {
+  background-color: lightgrey;
 }
 
 input {

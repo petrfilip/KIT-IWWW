@@ -1,0 +1,33 @@
+<style>
+  #target-element {
+    border: 2px solid crimson;
+    padding: 10px;
+    margin-top: 10px;
+  }
+</style>
+
+<h1>Načítání stránek</h1>
+
+<nav>
+  <button onclick="loadResource('text-1.txt')">Text 1</button>
+  <button onclick="loadResource('text-2.html')">Text 2</button>
+  <button onclick="loadResource('text-99.html')">Unknown</button>
+</nav>
+
+<section id="target-element">
+
+</section>
+
+<script>
+  function loadResource(file) {
+    console.log(file);
+
+    fetch('./data/' + file)
+    .then(response => response.text())
+    .then(data => document.getElementById("target-element").innerHTML = data)
+    .catch(error => {
+      document.getElementById("target-element").innerHTML = 'ERROR' + error.text;
+    });
+
+  }
+</script>
