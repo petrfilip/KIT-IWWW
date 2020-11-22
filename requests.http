@@ -1,0 +1,20 @@
+GET http://localhost/examples/api/07-rest-api/users/77
+Accept: application/json
+
+###
+
+
+DELETE http://localhost/examples/api/07-rest-api/users/77
+Accept: application/json
+
+###
+
+GET http://localhost/examples/api/07-rest-api/users/77
+Accept: application/json
+
+###
+
+GET http://localhost/examples/api/07-rest-api/users
+Accept: application/json
+
+###
