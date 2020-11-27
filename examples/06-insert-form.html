@@ -64,7 +64,7 @@
     .then(response => response.json())
     .then(data => convertToHtml(data))
     .then(html => html.forEach(item => document.getElementById("list-element").appendChild(item)))
-    .then(currentOffset++);
+    .then(currentOffset++); // všimněte si scope u currentOffset // to je další rozdíl mezi var VS let
   }
 
   function convertToHtml(objects) {

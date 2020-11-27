@@ -10,7 +10,7 @@ if (empty($query)) {
 }
 
 if (!preg_match('/^[a-zA-Z0-9 ]+$/', $query)) {
-    echo "Vstup obsauje nepovolené znaky: " . $query;
+    echo "Vstup obsahuje nepovolené znaky: " . $query;
     return;
 }
 
