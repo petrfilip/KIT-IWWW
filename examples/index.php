@@ -53,7 +53,7 @@
     if (!empty($_GET["page"]) && preg_match("/^[a-z0-9-\.]+$/", $_GET["page"])) {
         include $_GET["page"];
     } else {
-        echo '<h1>JavaScript na webu & načítání dat ze serveru</h1>';
+        echo '<h1>JavaScript na webu <br>& načítání dat ze serveru</h1>';
     }
 
     ?>

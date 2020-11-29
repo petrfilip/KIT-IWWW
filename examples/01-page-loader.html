@@ -11,7 +11,9 @@
 <nav>
   <button onclick="loadResource('text-1.txt')">Text 1</button>
   <button onclick="loadResource('text-2.html')">Text 2</button>
-  <button onclick="loadResource('text-99.html')">Unknown</button>
+  <button onclick="loadResource('countries.txt')">Countries</button>
+  <button onclick="loadResource('user.sql')">user.sql</button>
+  <button onclick="loadResource('text-404.html')">404</button>
 </nav>
 
 <section id="target-element">
@@ -23,8 +25,15 @@
     console.log(file);
 
     fetch('./data/' + file)
-    .then(response => response.text())
-    .then(data => document.getElementById("target-element").innerHTML = data);
+    .then(response => {
+      if (!response.ok) {
+        throw new Error("Not 2xx status");
+      }
+      console.log(response)
+      return response.text()
+    })
+    .then(data => document.getElementById("target-element").innerHTML = data)
+    .catch(error => document.getElementById("target-element").innerHTML = error);
 
 
   }

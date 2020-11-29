@@ -79,7 +79,7 @@
       document.getElementById("list-element").innerHTML = '';
       return html
     })
-    .then(html => html.forEach(item => document.getElementById("list-element").appendChild(item)))
+    .then(data => data.forEach(item => document.getElementById("list-element").appendChild(item)))
   }
 
   function convertToHtml(objects) {
@@ -104,7 +104,6 @@
     })
     .then(() => document.getElementById("insert-button").style.display = 'none')
     .then(() => document.getElementById("update-button").style.display = 'inline-block')
-    .then(() => reloadResource())
   }
 
   function deleteUser(id) {
