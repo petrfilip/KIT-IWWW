@@ -43,6 +43,7 @@
   <nav>
     <a href="https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch">Using Fetch</a>
     <a href="https://restfulapi.net/">REST API Tutorial</a>
+    <a href="https://denic.hashnode.dev/use-consolelog-like-a-pro">Use console.log</a>
   </nav>
 
 </div>

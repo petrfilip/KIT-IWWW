@@ -24,10 +24,8 @@
 
     fetch('./data/' + file)
     .then(response => response.text())
-    .then(data => document.getElementById("target-element").innerHTML = data)
-    .catch(error => {
-      document.getElementById("target-element").innerHTML = 'ERROR' + error.text;
-    });
+    .then(data => document.getElementById("target-element").innerHTML = data);
+
 
   }
 </script>

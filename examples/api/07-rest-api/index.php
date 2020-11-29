@@ -21,7 +21,6 @@ if ($entity == "users") {
     if ($_SERVER['REQUEST_METHOD'] === 'PUT' && !empty($id)) {
         // todo update
         return;
-
     }
 
     if ($_SERVER['REQUEST_METHOD'] === 'GET' && !empty($id)) {

@@ -1,0 +1,101 @@
+<style>
+  #target-element,  #main-loader {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .user {
+    border: 2px solid crimson;
+    padding: 10px;
+    margin: 10px;
+    width: 350px;
+    height: 110px;
+  }
+
+  #main-loader .user {
+    animation: anim 1s linear infinite;
+  }
+
+  #main-loader .user h3 {
+    background-color: gray;
+    opacity: 0.3;
+    display: block;
+    width: 100px;
+    border-radius: 5px;
+  }
+
+  #main-loader .user span {
+    background-color: gray;
+    opacity: 0.3;
+    display: block;
+    width: 300px;
+    border-radius: 5px;
+  }
+
+  @keyframes anim {
+    50% {
+      border: 2px solid #454545;
+    }
+  }
+
+
+</style>
+
+<h1>Loading</h1>
+
+<div id="target-element"></div>
+
+<div id="main-loader">
+  <div class="user"><h3>&nbsp;</h3><span>&nbsp;</span></div>
+  <div class="user"><h3>&nbsp;</h3><span>&nbsp;</span></div>
+  <div class="user"><h3>&nbsp;</h3><span>&nbsp;</span></div>
+  <div class="user"><h3>&nbsp;</h3><span>&nbsp;</span></div>
+  <div class="user"><h3>&nbsp;</h3><span>&nbsp;</span></div>
+  <div class="user"><h3>&nbsp;</h3><span>&nbsp;</span></div>
+  <div class="user"><h3>&nbsp;</h3><span>&nbsp;</span></div>
+  <div class="user"><h3>&nbsp;</h3><span>&nbsp;</span></div>
+  <div class="user"><h3>&nbsp;</h3><span>&nbsp;</span></div>
+  <div class="user"><h3>&nbsp;</h3><span>&nbsp;</span></div>
+  <div class="user"><h3>&nbsp;</h3><span>&nbsp;</span></div>
+  <div class="user"><h3>&nbsp;</h3><span>&nbsp;</span></div>
+  <div class="user"><h3>&nbsp;</h3><span>&nbsp;</span></div>
+  <div class="user"><h3>&nbsp;</h3><span>&nbsp;</span></div>
+  <div class="user"><h3>&nbsp;</h3><span>&nbsp;</span></div>
+  <div class="user"><h3>&nbsp;</h3><span>&nbsp;</span></div>
+  <div class="user"><h3>&nbsp;</h3><span>&nbsp;</span></div>
+  <div class="user"><h3>&nbsp;</h3><span>&nbsp;</span></div>
+  <div class="user"><h3>&nbsp;</h3><span>&nbsp;</span></div>
+  <div class="user"><h3>&nbsp;</h3><span>&nbsp;</span></div>
+</div>
+
+<button onclick="loadResource()">Načti další</button>
+
+<script>
+  var currentOffset = 0;
+
+  function loadResource() {
+    document.getElementById("main-loader").style.display = "flex"
+    fetch('./api/08-loading.php?limit=20&offset=' + currentOffset)
+    .then(response => response.json())
+    .then(data => convertToHtml(data))
+    .then(html => html.forEach(item => document.getElementById("target-element").appendChild(item)))
+    .then(currentOffset++)
+    .then(() => document.getElementById("main-loader").style.display = "none");
+  }
+
+  function convertToHtml(objects) {
+    let converted = [];
+    for (const user of objects) {
+      const div = document.createElement('DIV');
+      const template = `<div class="user"><h3>${user.name}</h3><span>${user.email}</span></div>`; //template literal
+      div.innerHTML = template
+      converted.push(div.firstChild);
+    }
+    console.log(converted);
+    return converted;
+  }
+
+  loadResource();
+
+
+</script>
