@@ -11,16 +11,10 @@
 
     <?php
 
-    function only_files($dir_element)
-    {
-        if (!is_dir($dir_element)) {
-            return $dir_element;
-        }
-    }
-
-    $files = array_diff(scandir("."), array(".", "..", "index.php"));
+    $files = array_diff(scandir("."), array(".", "..", "index.php", "default.html"));
     ?>
   <nav>
+      <a href="./">Úvod</a>
       <?php
       $i = 1;
       foreach ($files as $key => $file) {
@@ -53,7 +47,7 @@
     if (!empty($_GET["page"]) && preg_match("/^[a-z0-9-\.]+$/", $_GET["page"])) {
         include $_GET["page"];
     } else {
-        echo '<h1>JavaScript na webu <br>& načítání dat ze serveru</h1>';
+        include 'default.html';
     }
 
     ?>
