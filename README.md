@@ -25,8 +25,7 @@ díky kterým se naučíte základům tvorby webových stránek.
 7. Nejběžnější zranitelnosti webových aplikací
    ([video](https://youtu.be/6izW4Dys8xw)
    & [zdrojáky](https://github.com/petrfilip/KIT-IWWW/tree/6-vulnerabilities))
-8. Základy JavaScriptu pro web (prakticky)  
-   ([video](https://youtu.be/fUf1bWi36VI)
+8. Základy JavaScriptu pro web (prakticky) ([video](https://youtu.be/fUf1bWi36VI)
    & [zdrojáky](https://github.com/petrfilip/KIT-IWWW/tree/7-javascript-basics))
 9. AJAX - JavaScript pro dynamické načítání dat ze serveru + REST API
    ([video](https://www.youtube.com/watch?v=YJG4Zh7MahA)
