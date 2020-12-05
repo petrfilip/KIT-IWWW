@@ -1,1 +1,0 @@
-alert("Tady je i JavaScript!");
