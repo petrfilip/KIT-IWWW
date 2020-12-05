@@ -17,22 +17,28 @@ díky kterým se naučíte základům tvorby webových stránek.
 4. Použití tříd a objeků v PHP 
    ([video](https://youtu.be/vKUn46sIzJo) 
    & [zdrojáky](https://github.com/petrfilip/KIT-IWWW/tree/4-php-classes))
-4. Jak vytvořit eshop v PHP 
+5. Jak vytvořit eshop v PHP 
    ([video](https://youtu.be/fUf1bWi36VI) 
    & [zdrojáky](https://github.com/petrfilip/KIT-IWWW/tree/5-eshop))
-5. Jemný úvod do práce s MySQL databází 
+6. Jemný úvod do práce s MySQL databází 
    ([video](https://youtu.be/0HjxUCG4o1Y))
-6. Nejběžnější zranitelnosti webových aplikací
+7. Nejběžnější zranitelnosti webových aplikací
    ([video](https://youtu.be/6izW4Dys8xw)
    & [zdrojáky](https://github.com/petrfilip/KIT-IWWW/tree/6-vulnerabilities))
-   
+8. Základy JavaScriptu pro web (prakticky)  
+   ([video](https://youtu.be/fUf1bWi36VI)
+   & [zdrojáky](https://github.com/petrfilip/KIT-IWWW/tree/7-javascript-basics))
+9. AJAX - JavaScript pro dynamické načítání dat ze serveru + REST API
+   ([video](https://www.youtube.com/watch?v=YJG4Zh7MahA)
+   & [zdrojáky](https://github.com/petrfilip/KIT-IWWW/tree/8-ajax))
+
 V blízké budoucnosti budou (snad) dodělány tutoriály:
 
 - [x] Nejčastější útoky na web
-- [ ] Základy JavaScriptu
+- [x] Základy JavaScriptu
 - [ ] Adventní kalendář v JavaScriptu
 - [ ] Úvod do Reactu
-- [ ] REST API v PHP
+- [x] REST API v PHP
 - [ ] Jak nahrát na hosting (výběr hostingu, FTP, výběr domény)
 
 
@@ -40,6 +46,7 @@ V daleké budoucnosti:
 - [ ] Pokročilejší práce s MySQL databází (pokročilejší dotazy, exekuční plány, indexování, transakce, filldb.info)
 - [ ] Úvod do NoSQL databází
 - [ ] Přehled PHP frameworků
+- [ ] Přehled redakčních systémů (CMS, headless,...)
 - [ ] Jak na obrázky (PNG, JPG, WebP, AVIF), lazy loading, base64
 - [ ] Ještě lepší web a jeho vývoj (slug, mod_rewrite, composer)
 - [ ] Analýza webu (Google Analytics, Google Tag Manager)
