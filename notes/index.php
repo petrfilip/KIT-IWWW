@@ -28,6 +28,7 @@
     <a href="?page=02-level-access.md">2 - Minimální úroveň</a>
     <a href="?page=03-task-per-user.md">3 - Individuální oprávnění</a>
     <a href="?page=04-task-per-roles.md">4 - Role na úlohu</a>
+    <a href="?page=05-roles-with-individuals.md">5 - Kombinace role a individuálního přístupu</a>
     <a href="?page=10-comparison.md">Porovnání</a>
     <a href="?page=10-context-permission.md">Kontextová práva</a>
   </nav>

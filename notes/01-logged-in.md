@@ -5,7 +5,7 @@ Je založeno pouze na autentizaci.
 
 
 ```php
-if (jePřihlášen() {
+if (jePřihlášen()) {
 ...
 }
 ````

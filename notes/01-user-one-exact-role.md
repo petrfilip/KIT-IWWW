@@ -1,21 +1,23 @@
 # Shoda role
-Každý uživatel má nastavené své oprávnění:
+Každý uživatel je obsazen do jedné role. 
+Je potřeba zdokumentovat, s jakou rolí lze dělat jednotlivé operace. 
+Operace jsou většinou specifikovány v dokumentaci
 
 ![Alt text](./data/1.png#300)
 
 ## Výhody a nevýhody
 
-- přesné nastavení
-- náročné na údržbu
+- jednoduché nastavení
+- vhodné pro menší projekty
+- malá granularita
 
 ## Implementace:
-- operace je hard-coded list v aplikaci ([1=> "přidat článek", 2=> "smazat uživatele"])
+- role je hard-coded list v aplikaci (["editor", "admin"])
 - uživatel je tabulka v db (id, mail, heslo,...)
-- oprávnění je tabulka v db, která obsahuje relaci mezi operací a uživatelem -> definice oprávnění
 
 ```php
 if (!máPrávoNaOperaci(uživatel.role, ['admin'])) {
-throw new Exception("...");
+    throw new Exception("...");
 }
 ````
 
