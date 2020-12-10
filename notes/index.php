@@ -29,6 +29,8 @@
     <a href="?page=03-task-per-user.md">3 - Individuální oprávnění</a>
     <a href="?page=04-task-per-roles.md">4 - Role na úlohu</a>
     <a href="?page=05-roles-with-individuals.md">5 - Kombinace role a individuálního přístupu</a>
+    <a href="?page=06-access-on-object.md">6 - Přístup na objekt</a>
+    <a href="?page=07-role-inheritance.md">7 - Hierarchické role</a>
     <a href="?page=10-comparison.md">Porovnání</a>
     <a href="?page=10-context-permission.md">Kontextová práva</a>
   </nav>
@@ -36,8 +38,7 @@
 
   <nav>
     <a href="https://doc.nette.org/cs/3.0/access-control">Nette</a>
-    <a href="https://restfulapi.net/">REST API Tutorial</a>
-    <a href="https://denic.hashnode.dev/use-consolelog-like-a-pro">Use console.log</a>
+    <a href="https://docs.spring.io/spring-security/site/docs/3.0.x/reference/appendix-schema.html">Sring ACL</a>
   </nav>
 
 </div>

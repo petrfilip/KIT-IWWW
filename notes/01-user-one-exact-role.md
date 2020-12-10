@@ -1,7 +1,9 @@
 # Shoda role
-Každý uživatel je obsazen do jedné role. 
+Každý uživatel je obsazen do jedné role. (Role-based Access Control~~~~)
 Je potřeba zdokumentovat, s jakou rolí lze dělat jednotlivé operace. 
-Operace jsou většinou specifikovány v dokumentaci
+
+Operace jsou většinou specifikovány v dokumentaci.
+
 
 ![Alt text](./data/1.png#300)
 
