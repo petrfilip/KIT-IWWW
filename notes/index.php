@@ -24,10 +24,10 @@
   <nav>
     <a href="./">Úvod</a>
     <a href="?page=01-logged-in.md">0 - Přihlášen/Nepřihlášen</a>
-    <a href="?page=01-user-one-exact-role.md">1 - Shoda role</a>
-    <a href="?page=02-level-access.md">2 - Minimální úroveň</a>
     <a href="?page=03-task-per-user.md">3 - Individuální oprávnění</a>
+    <a href="?page=02-level-access.md">2 - Minimální úroveň</a>
     <a href="?page=04-task-per-roles.md">4 - Role na úlohu</a>
+    <a href="?page=01-user-one-exact-role.md">1 - Shoda role</a>
     <a href="?page=05-roles-with-individuals.md">5 - Kombinace role a individuálního přístupu</a>
     <a href="?page=06-access-on-object.md">6 - Přístup na objekt</a>
     <a href="?page=07-role-inheritance.md">7 - Hierarchické role</a>
@@ -38,7 +38,7 @@
 
   <nav>
     <a href="https://doc.nette.org/cs/3.0/access-control">Nette</a>
-    <a href="https://docs.spring.io/spring-security/site/docs/3.0.x/reference/appendix-schema.html">Sring ACL</a>
+    <a href="https://docs.spring.io/spring-security/site/docs/3.0.x/reference/appendix-schema.html">Spring ACL</a>
   </nav>
 
 </div>

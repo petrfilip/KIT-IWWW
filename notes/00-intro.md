@@ -4,15 +4,21 @@
 
 #Rozdělení uživatelů
 
+![Alt text](data/user-sets-no-role.png)
+
+
+#Oprávnění uživatelů
+
+![Alt text](./data/user-access.png)
+
+#Rozdělení uživatelů do rolí
+
 ![Alt text](data/user-sets.png)
 
-#Oprávnění uživatelů přes role
+#Oprávnění uživatelů
 
 ![Alt text](./data/role-based.png)
 
-#Oprávnění uživatelů (bez rolí)
-
-![Alt text](./data/user-access.png)
 
 #Minimální úroveň
 
