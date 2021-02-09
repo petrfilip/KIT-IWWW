@@ -32,17 +32,20 @@ díky kterým se naučíte základům tvorby webových stránek.
    & [zdrojáky](https://github.com/petrfilip/KIT-IWWW/tree/8-ajax))
 
 V blízké budoucnosti budou (snad) dodělány tutoriály:
-
-- [x] Nejčastější útoky na web
-- [x] Základy JavaScriptu
+- [ ] Jak nahrát na hosting (výběr hostingu, FTP, výběr domény)
+- [ ] Import & Export dat (JSON, XML,...)
+- [ ] Jak na práce se soubory (blob, base64, filesystem)
+- [ ] htaccess a hezké URL / slug
+- [ ] Jak řešit filtrování a řazení dat 
+- [ ] Jak na snadnější vytváření formulářů
+- [ ] Rychlý návrh databáze v MySQL workbench a další klienti (PMA, Adminer)
+- [ ] Ukázky redakčních systému (headless, wordpress, content types, )  
 - [ ] Adventní kalendář v JavaScriptu
 - [ ] Úvod do Reactu
-- [x] REST API v PHP
-- [ ] Jak nahrát na hosting (výběr hostingu, FTP, výběr domény)
 
 
 V daleké budoucnosti:
-- [ ] Pokročilejší práce s MySQL databází (pokročilejší dotazy, exekuční plány, indexování, transakce, filldb.info)
+- [ ] Pokročilejší práce s MySQL databází (pokročilejší dotazy + hierarchické dotazy, exekuční plány, indexování, transakce, filldb.info)
 - [ ] Úvod do NoSQL databází
 - [ ] Přehled PHP frameworků
 - [ ] Přehled redakčních systémů (CMS, headless,...)
