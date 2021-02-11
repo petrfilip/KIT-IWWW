@@ -37,5 +37,6 @@ foreach (GalleryRepository::getAll() as $item) {
     echo "<img src='data:image/".$item["image_format"].";base64,".base64_encode($item["image"])."' >";
 }
 
-
 ?>
+<br>
+<a href="export.php">Export to file</a>
