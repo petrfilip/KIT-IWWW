@@ -4,13 +4,18 @@ include 'GalleryRepository.php';
 
 if (empty($_GET)) {
     echo <<<HEREDOC
+<link rel="stylesheet" href="./../main.css">
+<div id="sidebar">
 <h1>Export example</h1>
+</div>
+
 <ul>
 <li><a href="./index.php">Upload</a></li>
-<li><a href="./export.php?export-type=json&disposition=inline" target="_blank">Export</a></li> 
+<li><a href="./export.php?export-type=json&disposition=inline" target="_blank">Export as json</a></li> 
 <li><a href="./export.php?export-type=json&disposition=attachment" >Export as json (attachment)</a></li> 
 <li><a href="./export.php?export-type=xml&disposition=inline" >Export as xml</a></li>
 <li><a href="./export.php?export-type=xml&disposition=attachment" >Export as xml (attachment)</a></li>
+<li><a href="./import.php" >Import</a></li>
 </ul>
 HEREDOC;
 //https://www.php.net/manual/en/language.types.string.php
