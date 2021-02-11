@@ -2,70 +2,89 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>JavaScript ukázky</title>
+  <title>Kam ukládata soubory</title>
   <link rel="stylesheet" href="../main.css">
-  <style>
-
-    img[src*="#300"] {
-      width: 300px;
-    }
-
-
-  </style>
 </head>
 <body>
 <div id="sidebar">
-  <h1>Přístup uživatelů</h1>
-
-    <?php
-
-    $files = array_diff(scandir("."), array(".", "..", "index.php", "default.html"));
-    ?>
-  <nav>
-    <a href="./">Úvod</a>
-    <a href="?page=01-logged-in.md">0 - Přihlášen/Nepřihlášen</a>
-    <a href="?page=03-task-per-user.md">3 - Individuální oprávnění</a>
-    <a href="?page=02-level-access.md">2 - Minimální úroveň</a>
-    <a href="?page=04-task-per-roles.md">4 - Role na úlohu</a>
-    <a href="?page=01-user-one-exact-role.md">1 - Shoda role</a>
-    <a href="?page=05-roles-with-individuals.md">5 - Kombinace role a individuálního přístupu</a>
-    <a href="?page=06-access-on-object.md">6 - Přístup na objekt</a>
-    <a href="?page=07-role-inheritance.md">7 - Hierarchické role</a>
-    <a href="?page=10-comparison.md">Porovnání</a>
-    <a href="?page=10-context-permission.md">Kontextová práva</a>
-  </nav>
-  <hr>
-
-  <nav>
-    <a href="https://doc.nette.org/cs/3.0/access-control">Nette</a>
-    <a href="https://docs.spring.io/spring-security/site/docs/3.0.x/reference/appendix-schema.html">Spring ACL</a>
-  </nav>
+  <h1>Kam ukládat soubory?</h1>
 
 </div>
+
+
 <div id="main">
-    <?php
-    $page = $_GET["page"];
 
-    if (!empty($page) && preg_match("/^[a-z0-9-\.]+$/", $page)) {
-        if (pathinfo($page)["extension"] === "md") {
-            require_once './../Parsedown.php';
-            $Parsedown = new Parsedown();
-            echo $Parsedown->text(file_get_contents($page));
-        } else {
-            include $page;
-        }
-    } else {
-        require_once './../Parsedown.php';
-        $Parsedown = new Parsedown();
-        echo $Parsedown->text(file_get_contents('00-intro.md'));
-    }
-    ?>
+  <h1>Implementace</h1>
+
+  <img src="./data/impl.png" width="1100px"/>
+
+  <h1>Porovnání</h1>
+
+  <table>
+    <thead>
+    <tr>
+      <th></th>
+      <th>Databáze</th>
+      <th>Filesystem</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+      <td><b>Uložení<b></td>
+      <td>Binary Large OBject (BLOB)</td>
+      <td>do specifického adresáře<br>reference z databáze (cesta)</td>
+    </tr>
+    <tr>
+      <td><b>Výkon<b></td>
+      <td>přidána vrstva databáze<br>opatrně s dotazy
+        <pre>Select * FROM</pre>
+      </td>
+      <td>závislé na file systému</td>
+    </tr>
+    <tr>
+      <td><b>Konzistence</b></td>
+      <td>ACID - vše nebo nic</td>
+      <td>může zůstat zapomenutý soubor</td>
+    </tr>
+    <tr>
+      <td><b>Zálohování</b></td>
+      <td>součást databáze = velké zálohy</td>
+      <td>prostá kopie včetně adresářové struktury</td>
+    </tr>
+    <tr>
+      <td><b>Škálování</b></td>
+      <td>závislé na DB (MySQL = složité, MongoDB = jednodušší)</td>
+      <td>přidání disku</td>
+    </tr>
+    <tr>
+      <td><b>Migrace</b></td>
+      <td>součást databáze = jednoduché</td>
+      <td>problémy s referencí = možné komplikace</td>
+    </tr>
+    <tr>
+      <td><b>Další poznámky</b></td>
+      <td>velké zálohy, omezená maximální velikost souboru</td>
+      <td>omezený počet souborů v adresáři</td>
+    </tr>
+    </tbody>
+  </table>
+
+  <h2>MySQL BLOB datové typy</h2>
+  <ul>
+    <li>TINYBLOB 255 bajtů</li>
+    <li>BLOB - 64 KB</li>
+    <li>MEDIUMBLOB - 16 MB</li>
+    <li>LONGBLOB - až 4 GB</li>
+  </ul>
+
+  <h2>MongoDB</h2>
+  <ul>
+    <li>BSON - 16 MB </li>
+    <li>GridFS > 16 MB </li>
+  </ul>
+
+
 </div>
-
-<link rel="stylesheet"
-      href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.4.0/styles/default.min.css">
-<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.4.0/highlight.min.js"></script>
-<script>hljs.initHighlightingOnLoad();</script>
 
 </body>
 </html>
