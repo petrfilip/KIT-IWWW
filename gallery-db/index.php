@@ -4,8 +4,8 @@ include 'GalleryRepository.php';
 
 if ($_POST) {
     $imageFileType = strtolower(pathinfo($_FILES["fileToUpload"]["name"],PATHINFO_EXTENSION));
-    $image_base64 = base64_encode(file_get_contents($_FILES['fileToUpload']['tmp_name']) );
-    GalleryRepository::insert($image_base64, $imageFileType);
+    $imageData = (file_get_contents($_FILES['fileToUpload']['tmp_name']) );
+    GalleryRepository::insert($imageData, $imageFileType);
     header('Location: '.$_SERVER['PHP_SELF']);
     die;
 }
@@ -34,7 +34,7 @@ if ($_POST) {
 <?php
 
 foreach (GalleryRepository::getAll() as $item) {
-    echo "<img src='data:image/".$item["image_format"].";base64,".($item["image"])."' >";
+    echo "<img src='data:image/".$item["image_format"].";base64,".base64_encode($item["image"])."' >";
 }
 
 
