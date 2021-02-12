@@ -21,7 +21,7 @@ díky kterým se naučíte základům tvorby webových stránek.
    ([video](https://youtu.be/fUf1bWi36VI) 
    & [zdrojáky](https://github.com/petrfilip/KIT-IWWW/tree/5-eshop))
 6. Jemný úvod do práce s MySQL databází 
-   ([video](https://youtu.be/0HjxUCG4o1Y))
+   ([video](https://www.youtube.com/watch?v=1d85TID3V4U))
 7. Nejběžnější zranitelnosti webových aplikací
    ([video](https://youtu.be/6izW4Dys8xw)
    & [zdrojáky](https://github.com/petrfilip/KIT-IWWW/tree/6-vulnerabilities))
