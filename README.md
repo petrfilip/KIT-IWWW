@@ -1,7 +1,28 @@
-# KIT-IWWW - JavaScript - načítání dat ze serveru
+# KIT-IWWW - oprávnění uživatelů
 
-Pomocí JavaScriptu lze asynchronně načítat data ze serveru a ty následně zpracovat na klientu.
+#Autentizace VS Autorizace
 
-V těchto zdrojových kódech jsou ukázky využití. 
+![Alt text](./notes/data/acl-iwww.png)
 
-![Ukázky](output.png)
+#Rozdělení uživatelů
+
+![Alt text](./notes/data/user-sets-no-role.png)
+
+
+#Rozdělení uživatelů do rolí
+
+![Alt text](./notes/data/user-sets.png)
+
+#Oprávnění uživatelů
+
+![Alt text](./notes/data/user-access.png)
+
+
+#Oprávnění uživatelů
+
+![Alt text](./notes/data/role-based.png)
+
+
+#Minimální úroveň
+
+![Alt text](./notes/data/level-based.png)
