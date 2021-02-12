@@ -1,0 +1,18 @@
+<?
+$offset = $_GET['offset'] ?? 0;
+$uriParams = "?controller=gallery&method=getAll&offset=";
+?>
+
+
+  <h2>Photos</h2>
+
+  <div>
+    <a href="<?php if ($offset <= 0) echo '#'; else echo $uriParams . ($offset - 1); ?>">Prev</a>
+    <a href="<?php if (empty($photos)) echo '#'; else echo $uriParams . ($offset + 1); ?>">Next</a>
+  </div>
+
+<?php
+foreach ($photos as $item) {
+  echo "<a href='?controller=gallery&method=deletePhotoProcessing&offset=".$offset."&id=".$item["id"]."'><img src='data:image/" . $item["image_format"] . ";base64," . base64_encode($item["image"]) . "' /></a>";
+}
+?>

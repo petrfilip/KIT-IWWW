@@ -46,6 +46,7 @@ input {
 
 img {
   max-width: 100%;
+
 }
 
 table {
@@ -58,18 +59,3 @@ td, th {
   text-align: left;
 }
 
-
-.yes {
-  background: url("./dependencies/yes.png") no-repeat center;
-  background-size: cover; /* Resize the background image to cover the entire container */
-}
-
-.no {
-  background: url("./dependencies/no.png") no-repeat center;
-  background-size: cover; /* Resize the background image to cover the entire container */
-}
-
-.exclamation {
-  background: url("./dependencies/exclamation.png") no-repeat center;
-  background-size: cover; /* Resize the background image to cover the entire container */
-}
