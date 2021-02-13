@@ -1,5 +1,4 @@
 <?php
-if (empty($_GET)) {
     echo <<<HEREDOC
 <link rel="stylesheet" href="./../main.css">
 <style>
@@ -22,7 +21,6 @@ if (empty($_GET)) {
     <input type="submit" value="Upload import file" name="submit">
   </form>
 HEREDOC;
-}
 
 
 if ($_POST) {
