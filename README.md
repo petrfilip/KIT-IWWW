@@ -33,14 +33,12 @@ díky kterým se naučíte základům tvorby webových stránek.
 10. Zabezpečený přístup - implementace práv a rolí 
    ([materiály](https://github.com/petrfilip/KIT-IWWW/tree/9-access-control))
 11. Práce se soubory (ukládání do databáze a na file-system), import a export dat (JSON, XML) 
-   ([zdrojáky](https://github.com/petrfilip/KIT-IWWW/tree/10-file-handling))
+   ([video](https://youtu.be/S2Q5Y84jiso) & [zdrojáky](https://github.com/petrfilip/KIT-IWWW/tree/10-file-handling))
 12. Implementace návrhového vzoru Model-View-Controller
-   ([zdrojáky](https://github.com/petrfilip/KIT-IWWW/tree/11-mvc))
+   ([video](https://youtu.be/6MkUW786m6E) & [zdrojáky](https://github.com/petrfilip/KIT-IWWW/tree/11-mvc))
 
 V blízké budoucnosti budou (snad) dodělány tutoriály:
 - [ ] Jak nahrát na hosting (výběr hostingu, FTP, výběr domény)
-- [x] Import & Export dat (JSON, XML,...)
-- [x] Jak na práce se soubory (blob, base64, filesystem)
 - [ ] htaccess a hezké URL / slug
 - [ ] Jak řešit filtrování a řazení dat 
 - [ ] Jak na snadnější vytváření formulářů
