@@ -3,18 +3,6 @@
 
 class GalleryModel
 {
-    static function getAll($limit = 10, $offset = 0): array
-    {
-        $query = "SELECT * FROM gallery_db ORDER BY id DESC LIMIT :limit OFFSET :offset";
-
-        $conn = Connection::getPdoInstance();
-        $stmt = $conn->prepare($query);
-        $stmt->bindParam(":limit", $limit, PDO::PARAM_INT);
-        $stmt->bindValue(":offset", intval($offset), PDO::PARAM_INT);
-        $stmt->execute();
-        return $stmt->fetchAll(PDO::FETCH_ASSOC);
-    }
-
     static function getAllPaged($limit = 10, $offset = 0): array
     {
         $query = "SELECT * FROM gallery_db ORDER BY id DESC LIMIT :limit OFFSET :offset";
@@ -26,7 +14,6 @@ class GalleryModel
         $stmt->execute();
         return $stmt->fetchAll(PDO::FETCH_ASSOC);
     }
-
 
     static function insert($image, $imageFormat)
     {
@@ -48,6 +35,5 @@ class GalleryModel
         $stmt->bindValue(":id", intval($id), PDO::PARAM_INT);
         return $stmt->execute();
     }
-
 
 }

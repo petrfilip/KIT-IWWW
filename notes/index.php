@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Kam ukládata soubory</title>
+  <title>Model View Controller</title>
   <link rel="stylesheet" href="../main.css">
 </head>
 <body>
@@ -15,6 +15,10 @@
 <div id="main">
 
   <h1>Jak to funguje?</h1>
+
+  <img src="./data/concept.png" width="1100px"/>
+
+  <h1>Implementace</h1>
 
   <img src="./data/impl.png" width="1100px"/>
 

@@ -3,42 +3,15 @@
 
 class Template
 {
-    /**
-     * @var string
-     */
     private $path;
 
-    /**
-     * @var array
-     */
-
-    /**
-     * Template constructor.
-     * @param string $path
-     */
-    public function __construct(string $path, string $method)
+    public function __construct(string $dir, string $method)
     {
-        $this->path = dirname(__FILE__) . "/{$path}/{$method}.phtml";
+        $this->path = dirname(__FILE__) . "/{$dir}/{$method}.phtml";
     }
 
-    /**
-     * @param string $view
-     * @param array $context
-     * @return string
-     * @throws \Exception
-     */
     public function render(array $context = []): string
     {
-        $content = $this->load(array_merge($context, ['template' => $this]));
-        foreach ($context as $key => $value) {
-            $content = str_replace('{{'.$key.'}}', $value, $content);
-        }
-        return $content;
-    }
-
-    private function load(array $context) : string
-    {
-
         if (!file_exists($file = $this->path)) {
             throw new \Exception(sprintf('The file %s could not be found.', $file));
         }
