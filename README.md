@@ -36,6 +36,8 @@ díky kterým se naučíte základům tvorby webových stránek.
    ([video](https://youtu.be/S2Q5Y84jiso) & [zdrojáky](https://github.com/petrfilip/KIT-IWWW/tree/10-file-handling))
 12. Implementace návrhového vzoru Model-View-Controller
    ([video](https://youtu.be/6MkUW786m6E) & [zdrojáky](https://github.com/petrfilip/KIT-IWWW/tree/11-mvc))
+13. Eshop v Reactu
+   ([video](https://youtu.be/C4LoZjzqG_k) & [zdrojáky](https://github.com/petrfilip/KIT-REACT))
 
 V blízké budoucnosti budou (snad) dodělány tutoriály:
 - [ ] Jak nahrát na hosting (výběr hostingu, FTP, výběr domény)
@@ -45,7 +47,6 @@ V blízké budoucnosti budou (snad) dodělány tutoriály:
 - [ ] Rychlý návrh databáze v MySQL workbench a další klienti (PMA, Adminer)
 - [ ] Ukázky redakčních systému (headless, wordpress, content types, )  
 - [ ] Adventní kalendář v JavaScriptu
-- [ ] Úvod do Reactu
 
 
 V daleké budoucnosti:
