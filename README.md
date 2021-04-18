@@ -38,6 +38,8 @@ díky kterým se naučíte základům tvorby webových stránek.
    ([video](https://youtu.be/6MkUW786m6E) & [zdrojáky](https://github.com/petrfilip/KIT-IWWW/tree/11-mvc))
 13. Eshop v Reactu
    ([video](https://youtu.be/C4LoZjzqG_k) & [zdrojáky](https://github.com/petrfilip/KIT-REACT))
+14. Todo list v Reactu
+   ([zdrojáky](https://github.com/petrfilip/react-todo-list) & [demo](https://todo.upce.tix.cz/))
 
 V blízké budoucnosti budou (snad) dodělány tutoriály:
 - [ ] Jak nahrát na hosting (výběr hostingu, FTP, výběr domény)
